@@ -29,14 +29,12 @@ const apiVideoKey = process.env.apivideoKeyProd;
 // website demo
 //get request is the initial request - load the HTML page with the form
 app.get('/', (req, res) => {
-		res.sendFile(path.join(__dirname, '../public', 'index.html'));  
-});
-
-
-app.post('/', (req, res) => {
+	
 	//console.log(req);
-	//get values from POST body
-	let videoName=req.body.videoName;
+	//usually you'd get values from POST body
+	//let videoName=req.body.videoName;
+	//for the demo, just "live stream" are to be deleted
+	let videoName="Live Stream";
 	var videoCount =3;
 	let videoTag = [];
 	videoTag.push(req.body.videoTag);
@@ -94,9 +92,9 @@ app.post('/delete', (req, res) => {
 	var filesToGo = JSON.parse(req.body.videos);
 	 console.log(filesToGo);
 	 deleteVideo(0, filesToGo.length, filesToGo);
-
-	 return res.sendFile(path.join(__dirname, '../public', 'index.html')); 
-
+     setTimeout( function () {
+	 	return res.redirect('/'); 
+	}, 5000);
 });
 
 function deleteVideo(counter, count, fileArray){
