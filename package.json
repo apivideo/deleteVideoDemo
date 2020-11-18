@@ -1,0 +1,45 @@
+{
+  "name": "cxxxc",
+  "version": "2.0.0",
+  "description": "Cool stuff is coming",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startprod": "babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougsillars/videosite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dougsillars/videosite/issues"
+  },
+  "homepage": "https://github.com/dougsillars/videosite#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "@api.video/nodejs-sdk": "^1.8.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "fluent-ffmpeg": "^2.0.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "intercom-client": "^2.11.0",
+    "mysql": "^2.18.1",
+    "pg": "^8.4.2",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^1.7.4"
+  }
+}

@@ -1,0 +1,22 @@
+head
+ 
+body
+  header.header 
+
+    
+    
+    block content
+      h1.
+        Videos to be deleted
+      for videos in video
+        img(src=videos.thumbnail width ="500")
+        p #{videos.title}  
+
+    form(action='/delete', method='post')
+      p 
+        input(type='hidden', name='videos', value=video)
+      input(type='submit', value='DELETE')
+	
+    a(href='/') delete more!
+    p
+    
