@@ -18,3 +18,8 @@ is the parent application to this one. Since this demoo allows for deleting vide
 
 This version allows for searches on video tag or video name.
 
+## installation
+
+clone the repo
+npm install (for all dependencies)
+node src/index.js
