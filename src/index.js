@@ -29,7 +29,7 @@ const apiVideoKey = process.env.apivideoKeyProd;
 // website demo
 //get request is the initial request - load the HTML page with the form
 app.get('/', (req, res) => {
-	
+	res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
 	//console.log(req);
 	//usually you'd get values from POST body
 	//let videoName=req.body.videoName;
