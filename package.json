@@ -8,23 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "startprod": "babel-node src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dougsillars/videosite.git"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dougsillars/videosite/issues"
-  },
-  "homepage": "https://github.com/dougsillars/videosite#readme",
-  "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "nodemon": "^2.0.12"
-  },
+
   "dependencies": {
     "@api.video/nodejs-sdk": "^1.8.2",
     "body-parser": "^1.19.0",
@@ -40,6 +28,7 @@
     "pg": "^8.4.2",
     "pug": "^2.0.4",
     "serve-favicon": "^2.5.0",
+    "nodemon": "^2.0.7",
     "socket.io": "^1.7.4"
   }
 }
