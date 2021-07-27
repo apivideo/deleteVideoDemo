@@ -127,7 +127,7 @@ function deleteVideo(counter, count, fileArray){
 
 
 //testing on 3011
-app.listen(3011, () =>
+app.listen(process.env.PORT || 3011, () =>
   console.log('Example app listening on port 3011!'),
 );
 process.on('uncaughtException', function(err) {
