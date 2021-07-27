@@ -29,6 +29,6 @@
     "pug": "^2.0.4",
     "serve-favicon": "^2.5.0",
     "nodemon": "^2.0.7",
-    "socket.io": "^1.7.4"
+    "socket.io": "^2.4.0"
   }
 }
