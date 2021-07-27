@@ -4,7 +4,7 @@
   "description": "Cool stuff is coming",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
+    "start": "nodemon  src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "startprod": "babel-node src/index.js"
   },
