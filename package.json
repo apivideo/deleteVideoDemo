@@ -4,7 +4,7 @@
   "description": "Cool stuff is coming",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon  src/index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "startprod": "babel-node src/index.js"
   },
@@ -23,7 +23,7 @@
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.12"
   },
   "dependencies": {
     "@api.video/nodejs-sdk": "^1.8.2",
