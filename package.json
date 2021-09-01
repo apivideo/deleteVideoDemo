@@ -26,7 +26,7 @@
     "intercom-client": "^2.11.0",
     "mysql": "^2.18.1",
     "pg": "^8.4.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.5.0",
     "nodemon": "^2.0.7",
     "socket.io": "^1.7.4"
