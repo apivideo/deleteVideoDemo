@@ -43,9 +43,6 @@ app.get('/', (req, res) => {
 
 
 	client = new apiVideo.Client({ apiKey: apiVideoKey});
-	
-	
-
 	let result = client.videos.search({currentPage: 1, pageSize: videoCount, title: videoName, sortBy:"publishedAt", sortOrder:"asc"});
 
 	result.then(function(videos) {
